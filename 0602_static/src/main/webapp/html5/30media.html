@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>30media.html</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<style type="text/css">
+		@media screen and (max-width:767px){
+			body{	background-color: red;	}
+		}
+		/* 최대 화면 가로 길이가 767인 경우 : 0~767 */
+		@media screen and (min-width:768px) and (max-width:959px) {
+			body{	background-color: green;	}
+		}
+		/* 최소 화면 가로 길이가 768에서 최대 화면 가로 길이가 959까지 */
+		@media screen and (min-width:960px) {
+			body{	background-color: blue;	}
+		}
+		/* 최소 화면 가로 길이가 960부터 : 960~ */
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Curabitur malesuada, quam vel ornare congue, 
+			dui erat venenatis lacus, vel pharetra magna dolor nec sapien.
+			Vestibulum sollicitudin turpis justo, 
+			sit amet cursus orci malesuada eget. 
+			Cras imperdiet efficitur arcu, a dictum turpis accumsan non. 
+			Vestibulum vitae vulputate augue. 
+			Nulla sed orci a velit scelerisque venenatis. 
+			Cras a aliquet ligula. Ut pellentesque, neque id elementum 
+			dignissim, felis lectus cursus dolor, ut molestie mi dui sed 
+			turpis. Cras rutrum, dui nec molestie laoreet, mi felis 
+			iaculis augue, eu condimentum mi urna sodales diam. </p>
+					
+	</body>
+</html>

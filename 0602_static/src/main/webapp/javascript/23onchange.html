@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>23onchange.html</title>
+	</head>
+	<body>
+		<h1>셀렉트박스를 선택하면 화면이 변하는 예제.</h1>
+		<select id="imgSel" onchange="chgBgImage();">
+			<option value="" selected="selected">선택하세요</option>
+			<option value="./furit1.jpg">과일선물세트 1호</option>
+			<option value="./furit2.jpg">과일선물세트 2호</option>
+		</select>
+		<script type="text/javascript">
+		function chgBgImage() {
+			document.body.background = imgSel.value;
+		}
+		</script>
+	</body>
+</html>

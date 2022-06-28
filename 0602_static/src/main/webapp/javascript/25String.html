@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>25String.html</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let str = "nice to meet you! too!";
+			document.write("str.length : " + str.length + "<br>"); //length
+			document.write("charAt(0) : " + str.charAt(0) + "<br>"); //index
+			document.write("charAt(length-1) : " + str.charAt(str.length-1) + "<br>");
+			document.write("indexOf(to) : " + str.indexOf("to") + "<br>");
+			document.write("lastindexOf(to) : " + str.lastIndexOf("to") + "<br>");
+			document.write("abc      .trim() : [" + "     abc       ".trim()+ "]" + "<br>");
+			document.write("toUpperCase() : " + str.toUpperCase() + "<br>");
+			document.write("toLowerCase() : " + str.toLowerCase() + "<br>");
+			document.write("concat() : " + str.concat("!!!") + "<br>");
+			document.write("문자열 + : " + str + "!!!" + "<br>");
+			document.write("<hr>");
+			
+			document.write("<h1>문자열 자르기와 대처하기</h1>");
+			document.write("slice : " + str.slice(3,10) + "<br>"); // 3번지부터 9번지까지
+			document.write("substring : " + str.substring(3,10) + "<br>"); // 3번지부터 9번지까지
+			document.write("substr : " + str.substr(3,11) + "<br>"); //3번지서부터 11개를 출력
+			document.write("<hr>");
+			
+			document.write("<h1>문자열 대처하기</h1>");
+			document.write("replace(e,A) : " + str.replace("e","A") + "<br>");//첫번째 e하나만 변경
+			document.write("replaceAll(e,A) : " + str.replaceAll("e","A") + "<br>");
+			document.write("<hr>");
+			
+			document.write("<h1>문자열을 잘라서 배열에 저장하기</h1>");
+			let strArr = str.split(" ");
+			for(let i = 0; i < strArr.length; i++){
+				document.write("strArr[" + i + "] : " + strArr[i] + "<br>");
+			}//for
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

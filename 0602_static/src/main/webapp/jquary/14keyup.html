@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>14keyup.html</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<h1>자바스크립트 정규식</h1>
+		숫자만 입력받는 text창 : <input type="text" id="numtxt">
+		<script>
+		$(document).ready(function() {
+			$("#numtxt").keyup(function() {
+				//alert(event.keyCode);
+				let tmp = $("#numtxt").val().replace(/[^  0-9  \.]/g ,"");
+				$("#numtxt").val(tmp);
+				//val() :html element의 값을 가져오거나, 값을 넣어주는 함수.
+				///[^  0-9  \.]/g 숫자 0에서 9까지만 허용하는 정규식 
+			});//keyup
+		});//ready
+		
+		</script>
+		<hr>
+		숫자만 입력받는 text창 : <input type="number" id="numtxt2" min="1" max="5">
+		<script >
+		$(document).ready(function() {
+			$("#numtxt2").change(function() {
+				if ($("#numtxt2").val() < 1 || $("#numtxt2").val()> 5) {
+					alert("1에서 5까지의 수를 입력하세요");
+					return;
+				}
+			});//change
+		});//ready
+		</script>
+		<hr>
+		숫자 + 영문 대소문자 + @ + . 만 허용하는 text창<br><br>
+		<input type="text" id="emailtxt">
+		<script>
+		$(document).ready(function() {
+			$("#emailtxt").keyup(function() {
+				let tmp2 = $("#emailtxt").val().replace(/[^  0-9a-zA-Z@.  \.]/g ,"");
+				$("#emailtxt").val(tmp2);
+			})
+		});//ready
+		</script>
+	</body>
+</html>

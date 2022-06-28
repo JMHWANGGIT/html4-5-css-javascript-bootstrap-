@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>14attr_selector.htmle</title>
+		<style type="text/css">
+		option[value] {
+			background-color: orange;
+		}
+		option[value=cherry], option[value=melon] {
+			background-color: skyblue;
+		}
+		</style>
+	</head>
+	<body>
+		<select multiple="multiple">
+			<option value="apple">apple</option>
+			<option>banana</option>
+			<option value="cherry">cherry</option>
+			<option>peach</option>
+			<option value="grape">grape</option>
+			<option value="melon">melon</option>
+			<option>watermelon</option>
+		</select>
+	</body>
+</html>
